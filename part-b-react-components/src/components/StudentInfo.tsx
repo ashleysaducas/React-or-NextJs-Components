@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from 'react';
+import './StudentInfo.css';
 
 interface StudentData {
     name: string;
@@ -101,60 +102,6 @@ const StudentInfo: React.FC = () => {
                     <p>Year: {formData.year}</p>
                 </div>
             )}
-
-            <style jsx>{`
-                .student-info {
-                    max-width: 500px;
-                    margin: 20px;
-                    padding: 20px;
-                    background-color: white;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                }
-                .form-group {
-                    margin-bottom: 15px;
-                }
-                label {
-                    display: block;
-                    margin-bottom: 5px;
-                    color: #495057;
-                }
-                input, select {
-                    width: 100%;
-                    padding: 8px;
-                    border: 1px solid #ced4da;
-                    border-radius: 4px;
-                    font-size: 16px;
-                }
-                button {
-                    width: 100%;
-                    padding: 10px;
-                    background-color: #007bff;
-                    color: white;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    font-size: 16px;
-                    margin-top: 10px;
-                }
-                button:hover {
-                    background-color: #0056b3;
-                }
-                .submission-info {
-                    margin-top: 20px;
-                    padding: 15px;
-                    background-color: #f8f9fa;
-                    border-radius: 4px;
-                }
-                h2 {
-                    color: #343a40;
-                    margin-bottom: 20px;
-                }
-                h3 {
-                    color: #495057;
-                    margin-bottom: 10px;
-                }
-            `}</style>
         </div>
     );
 };

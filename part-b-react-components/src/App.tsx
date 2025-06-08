@@ -6,26 +6,32 @@ import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="container">
-      <h1>React Components Demo</h1>
+    <div>
+      <header className="app-header">
+        <h1>React Components Demo</h1>
+      </header>
       
-      <section>
-        <h2>1. Welcome Card Component</h2>
-        <WelcomeCard 
-          name="John Doe" 
-          message="Welcome to our React components demo!"
-        />
-      </section>
+      <div className="container">
+        <div className="app-content">
+          <div className="component-section">
+            <h2>Welcome Card</h2>
+            <WelcomeCard 
+              name="John Doe" 
+              message="Welcome to our React components demo!"
+            />
+          </div>
 
-      <section>
-        <h2>2. Counter Component</h2>
-        <Counter initialValue={0} step={1} />
-      </section>
+          <div className="component-section">
+            <h2>Counter</h2>
+            <Counter initialValue={0} step={1} />
+          </div>
 
-      <section>
-        <h2>3. Student Information Form</h2>
-        <StudentInfo />
-      </section>
+          <div className="component-section">
+            <h2>Student Information</h2>
+            <StudentInfo />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

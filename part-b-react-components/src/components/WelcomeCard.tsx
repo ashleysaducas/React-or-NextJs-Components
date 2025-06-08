@@ -1,4 +1,5 @@
 import React from 'react';
+import './WelcomeCard.css';
 
 interface WelcomeCardProps {
     name: string;
@@ -6,28 +7,28 @@ interface WelcomeCardProps {
 }
 
 const WelcomeCard: React.FC<WelcomeCardProps> = ({ name, message = "Welcome to our platform!" }) => {
+    const getTimeBasedEmoji = () => {
+        const hour = new Date().getHours();
+        if (hour < 12) return '🌅';
+        if (hour < 18) return '☀️';
+        return '🌙';
+    };
+
+    const getTimeBasedGreeting = () => {
+        const hour = new Date().getHours();
+        if (hour < 12) return 'Good morning';
+        if (hour < 18) return 'Good afternoon';
+        return 'Good evening';
+    };
+
     return (
         <div className="welcome-card">
-            <h2>Hello, {name}!</h2>
+            <span className="emoji">{getTimeBasedEmoji()}</span>
+            <h2>{getTimeBasedGreeting()}, User!</h2>
             <p>{message}</p>
-            <style jsx>{`
-                .welcome-card {
-                    padding: 20px;
-                    border-radius: 8px;
-                    background-color: #f8f9fa;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    text-align: center;
-                    margin: 20px;
-                }
-                h2 {
-                    color: #007bff;
-                    margin-bottom: 10px;
-                }
-                p {
-                    color: #6c757d;
-                    margin: 0;
-                }
-            `}</style>
+            <div className="highlight">
+                Let's create something amazing today!
+            </div>
         </div>
     );
 };

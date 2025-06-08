@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Fundamentals - Part A</title>
+    <title>JavaScript Basics</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #f0f0f0;
+            line-height: 1.6;
         }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
         .exercise-section {
             background-color: white;
             padding: 20px;
@@ -19,81 +30,111 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #2196F3;
+            margin-top: 0;
+        }
+
         .output {
             background-color: #f8f9fa;
             padding: 15px;
             border-radius: 4px;
             margin-top: 10px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #ddd;
         }
+
         button {
-            background-color: #007bff;
+            background-color: #2196F3;
             color: white;
             border: none;
-            padding: 8px 16px;
+            padding: 10px 20px;
             border-radius: 4px;
             cursor: pointer;
             margin: 5px;
         }
+
         button:hover {
-            background-color: #0056b3;
+            background-color: #1976D2;
         }
+
         input {
             padding: 8px;
             margin: 5px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #ddd;
             border-radius: 4px;
+            width: 200px;
+        }
+
+        .explanation {
+            background-color: #E3F2FD;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>JavaScript Fundamentals Practice</h1>
+    <div class="header">
+        <h1>Learning JavaScript - The Basics</h1>
+        <p>Simple examples to understand JavaScript fundamentals</p>
+    </div>
 
     <!-- 1. Variables Exercise -->
     <div class="exercise-section">
-        <h2>1. Variables Exercise</h2>
-        <button onclick="runVariablesExercise()">Run Variables Exercise</button>
+        <h2>1. Variables</h2>
+        <div class="explanation">
+            Learn how to store and use different types of data (text, numbers, true/false)
+        </div>
+        <button onclick="runVariablesExercise()">Try Variables</button>
         <div id="variables-output" class="output"></div>
     </div>
 
     <!-- 2. Functions Exercise -->
     <div class="exercise-section">
-        <h2>2. Functions Exercise</h2>
-        <button onclick="runFunctionsExercise()">Run Functions Exercise</button>
+        <h2>2. Functions</h2>
+        <div class="explanation">
+            Learn how to create and use simple functions to calculate numbers
+        </div>
+        <button onclick="runFunctionsExercise()">Try Functions</button>
         <div id="functions-output" class="output"></div>
     </div>
 
     <!-- 3. Arrays Exercise -->
     <div class="exercise-section">
-        <h2>3. Arrays Exercise</h2>
-        <button onclick="runArraysExercise()">Run Arrays Exercise</button>
+        <h2>3. Arrays</h2>
+        <div class="explanation">
+            Learn how to work with lists of items (like a shopping list)
+        </div>
+        <button onclick="runArraysExercise()">Try Arrays</button>
         <div id="arrays-output" class="output"></div>
     </div>
 
-    <!-- 4. Objects Exercise -->
+    <!-- 4. Simple DOM Exercise -->
     <div class="exercise-section">
-        <h2>4. Objects Exercise</h2>
-        <button onclick="runObjectsExercise()">Run Objects Exercise</button>
-        <div id="objects-output" class="output"></div>
-    </div>
-
-    <!-- 5. DOM Manipulation -->
-    <div class="exercise-section">
-        <h2>5. DOM Manipulation</h2>
-        <button id="add-element">Add Element</button>
-        <button id="change-style">Change Style</button>
-        <button id="remove-element">Remove Element</button>
-        <div id="dom-container" class="output">
-            <p>This is a paragraph for DOM manipulation</p>
+        <h2>4. Webpage Interaction</h2>
+        <div class="explanation">
+            Learn how to change text on the webpage
         </div>
+        <button id="changeText">Change Text</button>
+        <button id="changeColor">Change Color</button>
+        <p id="displayText">Click the buttons to see what happens!</p>
     </div>
 
-    <!-- 6. Event Handling -->
+    <!-- 5. Simple Input Exercise -->
     <div class="exercise-section">
-        <h2>6. Event Handling</h2>
-        <input type="text" id="input-field" placeholder="Type something...">
-        <button id="submit-button">Submit</button>
-        <div id="event-output" class="output"></div>
+        <h2>5. User Input</h2>
+        <div class="explanation">
+            Learn how to work with user input
+        </div>
+        <input type="text" id="userInput" placeholder="Type your name">
+        <button id="greetButton">Say Hello</button>
+        <div id="greetingOutput" class="output"></div>
     </div>
 
     <script src="script.js"></script>

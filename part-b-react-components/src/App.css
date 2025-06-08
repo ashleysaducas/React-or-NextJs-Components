@@ -1,3 +1,5 @@
+@import './styles/shared.css';
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,4 +19,36 @@ section {
 h2 {
   color: #495057;
   margin-bottom: 20px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    background: var(--primary-gradient);
+    border-radius: 0 0 30px 30px;
+    box-shadow: var(--card-shadow);
+}
+
+.app-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.component-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.component-section h2 {
+    composes: section-title from './styles/shared.css';
 } 

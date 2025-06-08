@@ -1,0 +1,57 @@
+.welcome-card {
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.welcome-card:hover {
+    transform: translateY(-5px);
+}
+
+.welcome-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.welcome-card h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.welcome-card p {
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.welcome-card .emoji {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.welcome-card .highlight {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    backdrop-filter: blur(5px);
+} 

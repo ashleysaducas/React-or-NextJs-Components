@@ -1,0 +1,35 @@
+.counter {
+    composes: card gradient-card from '../styles/shared.css';
+    text-align: center;
+}
+
+.counter h3 {
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+    color: #000000;
+}
+
+.counter .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.counter button {
+    composes: button from '../styles/shared.css';
+    background: rgba(255, 255, 255, 0.1);
+    min-width: 60px;
+}
+
+.counter button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.counter .value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: none;
+    margin: 1rem 0;
+} 

@@ -1,0 +1,62 @@
+.student-info {
+    composes: card from '../styles/shared.css';
+}
+
+.student-info .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.student-info label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.student-info input,
+.student-info select {
+    composes: input-field from '../styles/shared.css';
+}
+
+.student-info button {
+    composes: button from '../styles/shared.css';
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.student-info .submission-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--background-light);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.student-info .submission-info h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.student-info .submission-info p {
+    margin: 0.5rem 0;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.student-info .submission-info p:last-child {
+    border-bottom: none;
+}
+
+.student-info h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.student-info h3 {
+    color: #495057;
+    margin-bottom: 10px;
+} 
