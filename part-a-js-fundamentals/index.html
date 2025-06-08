@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals - Part A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .exercise-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .output {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: 1px solid #dee2e6;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Fundamentals Practice</h1>
+
+    <!-- 1. Variables Exercise -->
+    <div class="exercise-section">
+        <h2>1. Variables Exercise</h2>
+        <button onclick="runVariablesExercise()">Run Variables Exercise</button>
+        <div id="variables-output" class="output"></div>
+    </div>
+
+    <!-- 2. Functions Exercise -->
+    <div class="exercise-section">
+        <h2>2. Functions Exercise</h2>
+        <button onclick="runFunctionsExercise()">Run Functions Exercise</button>
+        <div id="functions-output" class="output"></div>
+    </div>
+
+    <!-- 3. Arrays Exercise -->
+    <div class="exercise-section">
+        <h2>3. Arrays Exercise</h2>
+        <button onclick="runArraysExercise()">Run Arrays Exercise</button>
+        <div id="arrays-output" class="output"></div>
+    </div>
+
+    <!-- 4. Objects Exercise -->
+    <div class="exercise-section">
+        <h2>4. Objects Exercise</h2>
+        <button onclick="runObjectsExercise()">Run Objects Exercise</button>
+        <div id="objects-output" class="output"></div>
+    </div>
+
+    <!-- 5. DOM Manipulation -->
+    <div class="exercise-section">
+        <h2>5. DOM Manipulation</h2>
+        <button id="add-element">Add Element</button>
+        <button id="change-style">Change Style</button>
+        <button id="remove-element">Remove Element</button>
+        <div id="dom-container" class="output">
+            <p>This is a paragraph for DOM manipulation</p>
+        </div>
+    </div>
+
+    <!-- 6. Event Handling -->
+    <div class="exercise-section">
+        <h2>6. Event Handling</h2>
+        <input type="text" id="input-field" placeholder="Type something...">
+        <button id="submit-button">Submit</button>
+        <div id="event-output" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
